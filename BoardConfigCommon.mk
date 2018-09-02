@@ -90,7 +90,7 @@ BOARD_HAVE_MULTI_COLOR_LED := true
 BOARD_PROVIDES_LIBRIL := true
 
 # LineageHW
-BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(COMMON_PATH)/lineagehw|**/*.java
 
 # TWRP
 -include $(COMMON_PATH)/twrp.mk
